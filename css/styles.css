@@ -460,6 +460,12 @@ button:focus,
     padding-left: 10px;
   }
 
+  .profile__portrait {
+    margin-left: 10px;
+    width: 270px;
+    height: auto;
+  }
+
 }
 
 /* if the browser window is between 500px and 750px (eg. phones or tablets) just 2fr shall be used */
