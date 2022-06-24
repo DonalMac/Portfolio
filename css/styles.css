@@ -411,7 +411,6 @@ button:focus,
     .page-header img {
       width: 160px;
       height: 110px;
-      border-radius: 50%;
     }
   }
 
@@ -435,8 +434,36 @@ button:focus,
   }
 }
 
+/*@media all and (max-width: 425px) {
+  .page-header {
+    display: block;
+
+  }
+
+  .navigation-list__item {
+
+    margin-left: 0px;
+    padding-left: 12px;
+    padding-right: 10px;
+
+
+  }
+
+  .page-header__item:last-child {
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  .page-header img {
+    width: 408px;
+    height: 110px;
+    padding-left: 10px;
+  }
+
+}
+
 /* if the browser window is between 500px and 750px (eg. phones or tablets) just 2fr shall be used */
-@media all and (min-width: 500px) and (max-width: 750px) {
+@media all and (min-width: 425px) and (max-width: 750px) {
   @supports (display: grid) {
     .project {
       grid-template-columns: 1fr 1fr;
@@ -452,6 +479,31 @@ button:focus,
     margin-left: 10px;
     width: 180px;
     height: auto;
+  }
+
+  .page-header {
+    display: block;
+
+  }
+
+  .navigation-list__item {
+
+    margin-left: 0px;
+    padding-left: 12px;
+    padding-right: 10px;
+
+
+  }
+
+  .page-header__item:last-child {
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  .page-header img {
+    width: 408px;
+    height: 110px;
+    padding-left: 10px;
   }
 }
 
@@ -479,106 +531,12 @@ button:focus,
   h3 {
     font-size: var(--font-size_h3-small);
   }
+
+
 }
 
 /* end media support */
 
 /* end grid styling */
-
-/* start Animation styling */
-
-/* for an animation is always needed: first: a @keyframes and second: a class! */
-@keyframes color-change-sun {
-  0% {
-    fill: var(--img-color-1);
-    transform: rotate(4deg);
-  }
-
-  50% {
-    fill: var(--img-color-2);
-  }
-
-  100% {
-    fill: var(--img-color-3);
-  }
-}
-
-@keyframes color-change-tower {
-  0% {
-    fill: var(--img-color-1);
-  }
-
-  50% {
-    fill: var(--img-color-2);
-  }
-
-  100% {
-    fill: var(--img-color-3);
-  }
-}
-
-@keyframes color-change-center-quadria {
-  0% {
-    fill: var(--img-color-1);
-  }
-
-  50% {
-    fill: var(--img-color-2);
-  }
-
-  100% {
-    fill: var(--img-color-3);
-  }
-}
-
-/* moving anination */
-@keyframes cloud-move {
-  from {
-    transform: translate(0, 10px);
-  }
-
-  to {
-    transform: translate(200px, 50px);
-  }
-}
-
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(446px, 48px);
-  }
-
-  to {
-    transform: translate(100px, 48px);
-  }
-}
-
-.sun,
-.sun-shine {
-  /* this is the long therm */
-  animation-duration: 5s;
-  animation-name: color-change-sun;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-
-  /* possible values: ease, ease-in, ease-out, linear */
-  animation-timing-function: linear;
-}
-
-.tower {
-  /* this is the shortcut */
-  animation: 6s color-change-tower infinite alternate linear;
-}
-
-.center-quadria {
-  animation: 5.5s color-change-center-quadria infinite alternate ease-out;
-}
-
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
-}
-
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
-}
 
 /* start Animation styling */
