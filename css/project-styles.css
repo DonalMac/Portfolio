@@ -1,0 +1,33 @@
+/* ///////////////////////////////////////////////////////////////////// */
+/* project-styles.css */
+
+.headline {
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.project-capture {
+  height: 200px;
+  width: auto;
+}
+
+.gh-links {
+  margin: auto;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+@media all and (max-width: 375px) {
+  .project-capture {
+    height: 150px;
+    width: 274px;
+  }
+}
+
+@media all and (min-width: 375px) and (max-width: 990px) {
+  .project-capture {
+    height: 150px;
+    width: auto;
+  }
+}

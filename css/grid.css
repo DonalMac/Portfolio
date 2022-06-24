@@ -1,0 +1,133 @@
+/* start grid fallback ->THIS IS ONE TERM! */
+.project__item {
+  display: inline-block;
+  background-color: #cecece;
+  padding: 15px;
+  width: auto;
+  min-height: auto;
+  margin: 0;
+}
+
+/* end grid fallback */
+
+/* start grid syling */
+@supports (display: grid) {
+  .project {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    /* grid-template-rows: 300px 300px; row will be adjusted automaticly */
+    grid-gap: 20px;
+
+    /* Distance between items */
+    margin: 0;
+  }
+}
+
+/* END OF THE TERM */
+
+/* start media support */
+
+/* if the browser window is less than 500px (eg. phones or tablets) just 1fr shall be used */
+@media all and (max-width: 690px) {
+  @supports (display: grid) {
+    .project {
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+    }
+  }
+
+  svg {
+    width: 250px;
+    height: auto;
+  }
+
+  .profile__portrait {
+    margin: 0;
+    width: 140px;
+    height: auto;
+  }
+
+  .profile {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .media-center {
+    text-align: center;
+  }
+}
+
+/* if the browser window is between 500px and 750px (eg. phones or tablets) just 2fr shall be used */
+@media all and (min-width: 690px) and (max-width: 1250px) {
+  @supports (display: grid) {
+    .project {
+      -ms-grid-columns: 1fr 20px 1fr;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  svg {
+    width: 500px;
+    height: auto;
+  }
+
+  .profile__portrait {
+    margin-left: 10px;
+    width: 180px;
+    height: auto;
+  }
+}
+
+/* common proprieties for medias 0 to 750px */
+@media all and (max-width: 750px) {
+  @supports (display: grid) {
+    .project {
+      grid-gap: 10px;
+    }
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+}
+
+/* end media support */
+
+/* end grid styling */
+
+.headline {
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.project-capture {
+  height: 200px;
+  width: auto;
+}
+
+.gh-links {
+  margin: auto;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+@media all and (max-width: 990px) {
+  .project-capture {
+    height: 150px;
+    width: auto;
+  }
+}

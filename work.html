@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="MacDiarmid index/home Page" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Donal MacDiarmid - Portfolio Website</title>
+  <!--create logo and add it here!-->
+  <link rel="icon" type="image/png" href="img/DMC4.svg" sizes="32x32" />
+  <!--from here the css styling part is starting-->
+  <link rel="stylesheet" type="text/css" href="/css/normalize.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+  <link rel="stylesheet" type="text/css" href="css/project-styles.css" />
+  <!--from here the css styling part is ending-->
+</head>
+
+<body>
+  <div class="page">
+    <header class="page-header">
+      <!--add your Logo here!-->
+      <img id=logo2 src="img/DMC3.svg" alt=" Website logo" class="page-header__item">
+      <nav class="main-navigation page-header__item">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation" class="navigation-list__item">
+            <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+          </li>
+          <li role="presentation" class="navigation-list__item">
+            <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
+          </li>
+          <li role="presentation" class="navigation-list__item">
+            <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Work</a>
+          </li>
+          <li role="presentation" class="navigation-list__item">
+            <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-content">
+      <section>
+        <h1 class="text-center">Projects built with CareerFoundry:</h1>
+        <div class="project">
+          <!-- Grid items will live here -->
+          <div class="project__item">
+            <h2>Meet React App</h2>
+            <a href="./img/meet6.png" target="_blank">
+              <img src="./img/meet6.png" alt="meetUp screenshot" class="project-capture" /></a>
+
+
+            <p>
+              A serverless, progressive web application that accesses the Google Calendar API to
+              display information about events. The app was built using a test-driven approach and
+              uses a cloud-based server to perform user authentication with OAuth2.0.
+            </p>
+            <h5>
+              React, Serverless, AWS, Data Visualization, Test-Driven (Jest, Cucumber, Puppeteer),
+              Google OAuth
+            </h5>
+
+            <a href="https://donalmac.github.io/meet6/" target="_blank">View Live</a><br />
+            <a href="https://github.com/DonalMac/meet6" target="_blank">View code on GitHub</a>
+
+          </div>
+          <div class="project__item">
+            <h2>Pokedex</h2>
+            <a href="./img/Screenshot_Pokemon3.png" target="_blank">
+              <img src="./img/Screenshot_Pokemon3.png" alt="Pokédex screenshot" class="project-capture" /></a>
+            <p>
+              A simple, responsive web app that consumes data from an external API to create a
+              directory of Pokémon. Users can click on items to view further details that are
+              displayed in a custom modal.
+            </p>
+            <h5>JavaScript, HTML, CSS</h5>
+            <a href="https://DonalMac.github.io/pokedex-app/" target="_blank">View Live</a><br />
+            <a href="https://github.com/DonalMac/pokedex-app" target="_blank">View code on GitHub</a>
+          </div>
+          <div class="project__item">
+            <h2>myFlix Client "React"</h2>
+            <a href="./img/Screenshot_MyFlixClient.png" target="_blank">
+              <img src="./img/Screenshot_MyFlixClient.png" alt="movieFlex screenshot" class="project-capture" /></a>
+            <p>
+              A React front end for a movie app that allows users to view information about
+              movies, directors and genres for a selection of classic films. The app interacts
+              with movie and user data using the custom-built myFlix API.
+            </p>
+            <h5>React, React-Bootstrap, React-Redux</h5>
+            <a href="https://donalmac-myflix.netlify.app/" target="_blank">View Live</a><br />
+            <a href="https://github.com/DonalMac/myflix-client">View code on GitHub</a>
+          </div>
+          <div class="project__item">
+            <h2>MyFlix Client "Angular"</h2>
+            <a href="./img/Screenshot_MyFlixAngular.png" target="_blank">
+              <img src="./img/Screenshot_MyFlixAngular.png" alt="MovieFlex Angular screenshot"
+                class="project-capture" /></a>
+            <p>
+              An alternative implementation of a movie web app that consumes the myFlix API. This
+              version uses Angular for the front end, is styled using Angular Material and is
+              written in TypeScript.
+            </p>
+            <h5>Angular, Angular Material, TypeScript</h5>
+            <a href="https://donalmac.github.io/myFlix-Angular-Client/welcome">View Live</a><br />
+            <a href="https://github.com/DonalMac/myFlix-Angular-Client">View code on Github</a>
+          </div>
+          <div class="project__item">
+            <h2>Movie API</h2>
+            <a href="./img/Screenshot_MovieAPI.png" target="_blank">
+              <img src="./img/Screenshot_MovieAPI.png" alt="Movie API screenshot" class="project-capture" /></a>
+            <p>
+              A REST API that interacts with a non-relational database to provide a complete back
+              end for a movie web application. It supports a variety of CRUD operations via
+              requests to endpoints protected by authorisation strategies.
+            </p>
+            <h5>Node.js, Express, MongoDB, Mongoose,Heroku, Passport, Postman</h5>
+            <a href="https://github.com/DonalMac/movie_api">View code on GitHub</a>
+          </div>
+          <div class="project__item">
+            <h2>The Chat App</h2>
+            <a href="./img/Screenshot_ChatApp.png" target="_blank">
+              <img src="./img/Screenshot_ChatApp.png" alt="ChatMe Me screenshot" class="project-capture" /></a>
+            <p>
+              A cross-platform mobile application that allows users to participate in a group
+              chat. Chatters can read and send messages, share images and share their location.
+              The app uses React Native Async Storage to allow users to view stored messages when
+              offline.
+            </p>
+            <br />
+            <a href="https://github.com/DonalMac/TheChatApp">View code on Github</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <p>Find me on</p>
+      <div>
+
+        <!--insert GitHub logo-->
+        <a href="https://github.com/DonalMac" target="_blank">
+          <img src="img/github_icon.svg" alt="github">
+        </a>
+        <!--insert Instagram logo-->
+        <a href="https://www.instagram.com/idestroyer10/" target="_blank">
+          <img src="img/instagram_icon.svg" alt="instagram">
+        </a>
+        <!--insert linkedin logo-->
+        <a href="https://www.linkedin.com/in/donal-macdiarmid-22b65b41/" target="_blank">
+          <img src="img/linkedin_icon.svg" alt="linkedin">
+        </a>
+
+        <!--insert Facebook logo-->
+        <a href="https://www.facebook.com/donal.macdiarmid" target="_blank">
+          <img src="img/fb_icon.svg" alt="Facebook">
+        </a>
+
+      </div>
+    </footer>
+  </div>
+  <script src="js/tota11y.min.js"></script>
+</body>
+
+</html>
