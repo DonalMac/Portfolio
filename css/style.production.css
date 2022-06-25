@@ -525,14 +525,86 @@ button:focus {
 
 }
 
-/* if the browser window is less than 500px (eg. phones or tablets) just 1fr shall be used */
-@media all and (max-width: 690px) {
+@media all and (max-width: 425px) {
+  .page-header {
+    display: flow-root;
+
+  }
+
+  .navigation-list__item {
+
+    margin-left: 0px;
+    padding-left: 6px;
+    padding-right: 8px;
+
+
+  }
+
+  .page-header__item:last-child {
+    flex-grow: 1;
+    text-align: center;
+  }
 
   .page-header img {
-    width: 160px;
+    width: 373px;
     height: 110px;
-    border-radius: 50%;
+    padding-left: 10px;
   }
+
+  .profile__portrait {
+    margin-left: 10px;
+    width: 270px;
+    height: auto;
+  }
+
+}
+
+@media all and (min-width: 425px) and (max-width: 750px) {
+  @supports (display: grid) {
+    .project {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  svg {
+    width: 500px;
+    height: auto;
+  }
+
+  .profile__portrait {
+    margin-left: 10px;
+    width: 270px;
+    height: auto;
+  }
+
+  .page-header {
+    display: block;
+
+  }
+
+  .navigation-list__item {
+
+    margin-left: 0px;
+    padding-left: 9px;
+    padding-right: 10px;
+
+
+  }
+
+  .page-header__item:last-child {
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  .page-header img {
+    width: 408px;
+    height: 110px;
+    padding-left: 10px;
+  }
+}
+
+/* if the browser window is less than 500px (eg. phones or tablets) just 1fr shall be used */
+@media all and (max-width: 690px) {
 
   .project__item {
     padding: 0rem 0rem;
